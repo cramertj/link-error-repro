@@ -1,0 +1,11 @@
+cargo-features = ["edition"]
+
+[package]
+name = "rolldice"
+edition = "2018"
+version = "0.1.0"
+authors = ["Taylor Cramer <cramertj@google.com>"]
+
+[dependencies]
+rand = "0.4"
+structopt = "0.2.4"
