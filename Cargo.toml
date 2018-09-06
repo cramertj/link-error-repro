@@ -9,3 +9,11 @@ authors = ["Taylor Cramer <cramertj@google.com>"]
 [dependencies]
 rand = "0.4"
 structopt = "0.2.4"
+
+[lib]
+name = "rolldicelib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rolldice"
+path = "src/main.rs"
