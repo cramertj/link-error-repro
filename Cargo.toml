@@ -7,13 +7,14 @@ version = "0.1.0"
 authors = ["Taylor Cramer <cramertj@google.com>"]
 
 [dependencies]
-rand = "0.4"
-structopt = "0.2.4"
+rand = "=0.4.2"
+structopt = "=0.2.8"
 
 [lib]
-name = "rolldicelib"
+name = "unused_third_party_build"
 path = "src/lib.rs"
 
-[[bin]]
-name = "rolldice"
-path = "src/main.rs"
+[patch.crates-io]
+backtrace-sys = { path = "./patches/backtrace-sys" }
+fuchsia-zircon = { path = "./patches/fuchsia-zircon" }
+fuchsia-zircon-sys = { path = "./patches/fuchsia-zircon/fuchsia-zircon-sys" }
